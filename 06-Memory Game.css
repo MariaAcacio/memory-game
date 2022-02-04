@@ -1,0 +1,147 @@
+/* SE HACE UN RESET CSS: */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, pre, code, address, variable, form, fieldset, blockquote
+{
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+/* table { border-collapse:collapse; border-spacing: 0; } */
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+html,body		/* Para evitar inconvenientes futuros, se especifica que html y body */
+{				/* deben ocupar el ancho y alto total de la página. */
+    min-height:100%;
+}
+
+/* FIN DEL RESET CSS */
+
+@font-face		/* Función que incluye una tipografía desde la carpeta raíz */
+{
+	font-family:'lunita';	/* se le indica un apodo a dicha tipografía */
+	src:url('./luna.ttf');	/* se indica su ubicación desde a raíz */
+}
+body
+{
+    background:-webkit-linear-gradient(bottom, rgb(170, 240, 217) 20%, rgb(212, 223, 219) 80%);
+	 cursor: default;
+}
+h1
+{
+    font:40px "lunita";
+    width:6em;
+    margin:20px auto;
+    text-align:center;
+    text-shadow: blanchedalmond 1px 10px 5px;
+	 transition: color 1s, text-shadow 0.8s ease;
+}
+h1:hover
+{
+    color:goldenrod;
+    text-shadow: rgb(0, 0, 0) 10px 10px 5px; 
+}
+#Table1
+{
+    margin:0px auto;
+    text-align:center;
+    border-spacing:0px;
+    background-color:black;
+	 box-sizing: border-box;
+}
+#Table2
+{
+    margin:10px auto;
+    text-align:center;
+
+}
+.Player
+{
+    font-size:20px;
+    text-align:center;
+    background:-webkit-radial-gradient(circle,rgb(117, 184, 190) 20%, rgb(56, 140, 148) 80%);
+    width:6em;
+    padding:0.4em 1em;
+    margin: 0px;
+	 cursor: pointer;
+	 box-sizing: border-box;
+	 transition: ease color 0.6s;
+}
+#Player1{
+	margin: 1px 0px 0px 1px;
+}
+#Player2{
+	margin: 0px 0px 1px 1px;
+}
+#Player1:hover{
+	color: white;
+}
+#Player2:hover{
+	color: white;
+}
+
+.Score
+{
+    font-size:20px;
+    text-align:center;
+    background:-webkit-radial-gradient(circle,rgb(117, 184, 190) 20%, rgb(56, 140, 148) 80%);
+    width:2em;
+    padding:0.4em 0.6em;
+    margin:0;
+	 cursor: default;
+	 transition: ease color 0.6s;
+}
+.Score:hover{
+	color: white;
+}
+#Score1{
+	margin: 1px 1px 0px 0px;
+}
+#Score2{
+	margin: 0px 1px 1px 0px;
+}
+
+.Square
+{
+    background-color: dimgray;
+    width:50px;
+    height: 50px;
+	 cursor: pointer;
+	 box-sizing: border-box;
+}
+.Square:hover
+{
+   box-shadow: rgb(68, 73, 73) 0px 0px 5px;
+	border: black 1px solid;
+}
+div
+{
+    width:4em;
+    text-align:right;
+    margin:0.5em auto;
+}
+#Reset
+{
+    background-color: rgb(236, 159, 115);
+    font-size: 20px;
+	border: solid transparent 2px;
+	 transition: ease background 0.3s;
+	 cursor: pointer;
+}
+#Reset:hover
+{
+   background-color: rgb(219, 223, 7);
+	border: solid black 2px;
+}
+
+
+
+
+
+
+
+
